@@ -261,12 +261,12 @@ footer  *{
 	
 
 }
-@media (max-width:900px ) {
+@media (max-device-width:900px ) {
 	html{
 		font-size:14px;
 	}
 }
-@media (max-width:620px ) {
+@media (max-device-width:620px ) {
 	html{
 		font-size:12px;
 	}
@@ -308,7 +308,7 @@ footer  *{
 		display: block!important;
 	}
 }
-@media (max-width:480px ) {
+@media (max-device-width:480px ) {
 	html{
 		font-size:10px;
 	}

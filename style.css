@@ -263,10 +263,10 @@ footer  *{
 }
 @media (max-width:900px ) {
 	html{
-		font-size:12px;
+		font-size:14px;
 	}
 }
-@media (max-width:480px ) {
+@media (max-width:620px ) {
 	html{
 		font-size:12px;
 	}
@@ -306,5 +306,10 @@ footer  *{
 	}
 	.min{
 		display: block!important;
+	}
+}
+@media (max-width:480px ) {
+	html{
+		font-size:10px;
 	}
 }

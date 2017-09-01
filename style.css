@@ -105,7 +105,7 @@ input{
 	color:#fff;
 }
 .header-image{
-	background-image: url(landing.jpg);
+	background-image: url(//image.kitchbot.com/w1600h1000-m/web/us/landing.jpg);
 	height: 100vh;
 	width: 100vw;
 	background-size: cover;
@@ -148,7 +148,7 @@ a.button{
 	display:flex;
 	padding:1rem;
 }
-
+    
 .section.column{
 	display:flex;
 	flex-direction: row;
@@ -260,33 +260,58 @@ footer  *{
 
 }
 
-@media only screen and (max-device-width:620px ) {
+@media only screen and (max-device-width:1024px ) {
 	html{
 		font-size:10px;
-	}
-	.header-content{
-		align-items: center;
-		transform: translateY(-10%);
-	
-	}
-	.header-sub-content{
-		padding:1rem;
-	}
-	.header-image{
-		background-image: url(landing-mobile.jpg)
-	}
-	.signIn{
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-	.section{
-		flex-direction: column!important;
 	}
 	.section.left.right{
 		margin-left: 0rem;
 		margin-right: 0rem; 
 	}
+	.navi{
+		position:absolute;
+		
+	}
+	
+	.header-content{
+		align-items: center;
+		font-size: 2.6rem;
+	
+	}
+	.sub{
+		display:none;
+	}
+	.recipe{
+		padding: 2rem
+	}
+	.recipe.description{
+		font-size: 2rem;
+	}
+	.header-sub-content{
+		padding:1rem;
+	}
+
+	.header-image{
+		background-image: url(//image.kitchbot.com/w1600h1000-m/web/us/landing-mobile.jpg)
+	}
+	.button.wide.white{
+		display: none;
+	}
+	.signIn{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding:1rem;
+		
+	}
+	.signIn.left.right{
+		margin-left:1rem;
+		margin-right:1rem;
+	}
+	.section{
+		flex-direction: column!important;
+	}
+	
 	.section.top{
 		margin-top:0rem;
 	}

@@ -70,7 +70,7 @@ input{
 	color:#fff;
 }
 .button-font-size{
-	font-size: 1.6rem;
+	font-size: 1.6rem!important;
 }
 .section.orange{
 	background-color: #fcefe4;
@@ -88,8 +88,6 @@ input{
 .section .row{
 	display: flex;
 	flex-direction: row;
-
-
 }
 .text-color-red{
 	color:#ea4d33;
@@ -145,8 +143,7 @@ a.button{
 }
 .signIn{
 	position: relative;
-	top: -3rem;
-	
+	transform: translateY(-20%);
 	border-radius: 1rem;
 	display:flex;
 	padding:1rem;
@@ -210,6 +207,7 @@ a.button{
 .header-sub-content{
 	font-size:2rem;
 	line-height:3rem;	
+	padding:1rem;
 }
 .content{
 	font-size:1.5rem;
@@ -261,14 +259,21 @@ footer  *{
 	
 
 }
-@media (max-device-width:900px ) {
+
+@media only screen and (max-device-width:620px ) {
 	html{
-		font-size:14px;
+		font-size:10px;
 	}
-}
-@media (max-device-width:620px ) {
-	html{
-		font-size:12px;
+	.header-content{
+		align-items: center;
+		transform: translateY(-10%);
+	
+	}
+	.header-sub-content{
+		padding:1rem;
+	}
+	.header-image{
+		background-image: url(landing-mobile.jpg)
 	}
 	.signIn{
 		flex-direction: column;
@@ -285,13 +290,11 @@ footer  *{
 	.section.top{
 		margin-top:0rem;
 	}
+	
 	.step.block{
 		padding:1rem;
 	}
-	.signIn.left.right{
-		margin-left: 1rem;
-		margin-right: 1rem; 
-	}
+	
 	.section .image{
 		padding:1rem 1rem 0rem 1rem;
 	}
@@ -301,15 +304,14 @@ footer  *{
 	.section .row{
 		flex-direction: column;
 	}
+
+	.section.padding-left-right{
+		padding: 1rem 1rem;
+	}
 	.wide{
 		display: none!important;
 	}
 	.min{
 		display: block!important;
-	}
-}
-@media (max-device-width:480px ) {
-	html{
-		font-size:10px;
 	}
 }
